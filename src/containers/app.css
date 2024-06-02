@@ -38,18 +38,21 @@ h1 {
 }
 
 .robot-card:hover {
-  transform: scale(1.05); /* grow effect on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .robot-card img {
-  width: 100%; /* Ensure the image fits within the card */
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 0.5rem 0.5rem 0 0; /* Rounded corners for the top of the image */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 2px solid #ddd; /* Light border */
+  width: 200px; /* Set width */
+  height: 200px; /* Set height to match the width */
+  object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.robot-card div {
+.robot-card {
   text-align: center;
 }
 
